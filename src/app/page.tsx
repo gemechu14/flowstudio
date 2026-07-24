@@ -62,22 +62,22 @@ export default function DashboardPage() {
         description="Platform overview and activity."
       />
       <div className="flex-1 overflow-y-auto p-6">
-        <div className="mx-auto flex max-w-7xl flex-col gap-6">
+        <div className="flex flex-col gap-6">
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             {statCards.map((stat) => {
               const Icon = stat.icon;
               return (
-                <Card key={stat.label} className="relative overflow-hidden">
-                  <CardContent className="p-5">
-                    <div className="flex items-start justify-between">
+                <Card key={stat.label} className="relative min-h-[128px] overflow-hidden">
+                  <CardContent className="flex h-full items-center p-6">
+                    <div className="flex w-full items-start justify-between">
                       <div>
                         <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                           {stat.label}
                         </p>
-                        <p className="mt-2 font-mono text-3xl font-semibold tracking-tight">
+                        <p className="mt-3 font-mono text-3xl font-semibold tracking-tight">
                           {stat.value}
                         </p>
-                        <p className="mt-1 text-xs text-muted-foreground">
+                        <p className="mt-1.5 text-xs text-muted-foreground">
                           {stat.detail}
                         </p>
                       </div>

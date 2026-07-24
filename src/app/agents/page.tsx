@@ -52,7 +52,7 @@ export default function AgentsPage() {
       />
 
       <div className="flex-1 overflow-y-auto p-6">
-        <div className="mx-auto max-w-5xl">
+        <div>
           <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-muted-foreground">
             Configuration · Agents
           </p>
